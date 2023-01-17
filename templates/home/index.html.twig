@@ -17,4 +17,24 @@
         <li>Your template at <code><a href="{{ 'C:/Users/33614/Desktop/projet symfo/my_project/templates/home/index.html.twig'|file_link(0) }}">templates/home/index.html.twig</a></code></li>
     </ul>
 </div>
+    <div class="home-wrapper">
+        <h1>Bienvenue sur SteamOne</h1>
+
+        Découvrez nos jeux du moment:
+
+        <div class="all-cards">
+            {% for game in games % %}
+                <div class="card-game">
+                <img class="image-car" src="{{  asset('image/'~game.imageName)}}" alt="image de {{ game.name }}">
+                </div>
+                <div class="card-text">
+                    <h3>{{ game.name }}</h3>
+                    <span>{{ game.genre }}</span>
+                </div>
+            <span class="price">{{ game.price }} €</span>
+        </div>
+            {% endfor %}
+            </div>
+        </div>
+    </div>
 {% endblock %}

@@ -1,0 +1,76 @@
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,73,121,0.6839329481792717) 35%, rgba(0,212,255,1) 100%);
+}
+
+.game-home{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 350px;
+}
+.all-cards{
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card-game{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    border: 2px solid #131323;
+    border-radius: 10px;
+    height: 125px;
+    width: 200px;
+    background:#1a1a2e;
+    transition: 0.2s linear;
+    position: relative;
+}
+.img-card{
+    height: 125px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.image-card{
+    width: 200px;
+    object-fit: cover center;
+}
+
+.card-text{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 175px;
+}
+
+.price {
+    position:absolute;
+    background : rgb(233, 69, 96);
+    padding: 5px;
+    border: 1px solid #1a1a2e ;
+    border-radius: 10px;
+    right: -20px;
+    bottom: 20px;
+}
+
+.card-game:hover {
+    height: 300px;
+}
+
+.card-game:hover .card-text {
+
+    display: flex;
+}
+
+
+
